@@ -1,6 +1,6 @@
 * helm-ghc
 
-[[http://melpa.org/#/helm-ghc][file:http://melpa.org/packages/helm-ghc-badge.svg]]
+[[http://melpa.org/#/helm-ghc][file:http://melpa.org/packages/helm-ghc-badge.svg]]     [[http://stable.melpa.org/#/helm-ghc][file:http://stable.melpa.org/packages/helm-ghc-badge.svg]]
 
 ** Purpose
 This is a Helm datasource for GHC-mod errors. When ghc-mod places at
