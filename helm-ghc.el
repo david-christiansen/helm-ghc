@@ -5,8 +5,8 @@
 ;; Author: David Raymond Christiansen <david@davidchristiansen.dk>
 ;; Maintainer: David Raymond Christiansen <david@davidchristiansen.dk>
 ;; Keywords: languages, helm
-;; Package-Requires: ((helm "0.0.0"))
-;; Version: 0.0.1
+;; Package-Requires: ((helm "0.0.0") (ghc "5.2.1.0"))
+;; Version: 0.1.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -34,12 +34,10 @@
 
 ;;; Code:
 
-;; We don't need to actually depend on ghc-mod, because the only thing
-;; we use are properties of its overlays. If it's not present,
-;; `helm-ghc-errors' will simply return an empty buffer.
-
 (require 'helm)
 (require 'cl-lib)
+(require 'ghc-check)
+
 
 (defun helm-ghc-errors-in-buffer ()
   "Return all the ghc-mod error overlays in the current buffer."
@@ -102,4 +100,4 @@ produced by ghc-mod."
         :buffer "*helm-ghc*"))
 
 (provide 'helm-ghc)
-;;;helm-ghc.el ends here
+;;; helm-ghc.el ends here
